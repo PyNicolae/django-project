@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    
+
+
+    <!--##########  NAVBAR  #########-->
+
+
+    <nav>
+
+        <ul>
+            {% if user.is_authenticated %}
+            <li><a href="/upload">Upload</a></li>
+            <li style="float: right;"><a href="/aboutus">About</a></li>
+            <li><a href="/signout">Signout</a></li>
+
+            {% else %}
+            <li><a href="/signin">Login</a></li>
+            <li><a href="/register">Register</a></li>
+            {% endif %}
+        </ul>
+
+    </nav>
+
+
+
+    <div id="title" class="row">
+        <h1>File-transfer</h1>
+    </div>
+
+    <!--##########  #########-->
+
+
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+            <form action="/register" method="post"> 
+                {% csrf_token %}
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your username" id="username" name="username" required/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" placeholder="Enter your password" id="pass1" name="pass1" required/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" placeholder="Confirm your password" id="pass2" name="pass2" required/>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Register"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="Info">
+        <p>We don't store e-mail,so don't forget your password!</p>
+    </div>
+
+
+</body>
+</html>

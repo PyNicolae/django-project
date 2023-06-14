@@ -1,0 +1,230 @@
+/* BODY */
+
+body {
+    margin: 2%;
+    background: linear-gradient(rgb(32, 32, 32), #8a8a8a);
+    height: 100vh;
+}
+
+.row {
+    margin: auto;
+    margin-top: 8px;
+    text-align: center;
+    color: white;
+    width: 50%;
+    border: 2px solid grey;
+    padding: 15px;
+}
+
+
+
+
+/* UPLOAD FILE(CHOOSE FILE) */
+.uploadfile{
+    margin: auto;
+    margin-top: 4px;
+    text-align: center;
+    width: 50%;
+    border: 2px solid grey;
+    padding: 15px;
+    color: whitesmoke
+}
+
+input[type=file]::file-selector-button {
+    border: 2px solid #b8b8b8;
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: #3e3e3e;
+    transition: 2s;
+    color: #b8b8b8;
+}
+
+input[type=file]::-ms-browse:hover {
+    background-color: #b8b8b8;
+    color:black;
+    cursor: pointer;
+}
+
+input[type=file]::-webkit-file-upload-button:hover {
+    background-color: #b8b8b8;
+    color:black;
+    cursor: pointer;
+}
+
+input[type=file]::file-selector-button:hover {
+    background-color: #b8b8b8;
+    color:black;
+    cursor: pointer;
+}
+
+
+
+.alert{
+    color: white;
+    margin:2px,2px,2px,2px;
+}
+
+  
+
+
+/* Button upload*/
+
+.uploadbutton{
+    width: 53%;
+    margin:auto;
+
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(133, 130, 130);
+    margin-top: 4%;
+}
+
+button:active {
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    border-radius: 5px;
+}
+
+button:hover {
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:#9f9f9f;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+/* NAVBAR/Menu */
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+    border-left:1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+
+/*  ABOUTUS PAGE  */
+
+.about-section {
+    margin-top: 8px;
+    padding: 50px;
+    text-align: center;
+    color: rgb(197, 196, 196);
+}
+
+
+/* REGISTER PAGE*/
+
+.container{
+    margin: auto;
+    margin-top: 8px;
+    text-align: center;
+    color: white;
+    width: 50%;
+    border: 2px solid grey;
+    padding: 15px;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color:#333333;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #b8b8b8;
+    
+}
+
+form .button{
+    height: 45px;
+    margin: 35px 0;
+}
+
+form .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:#9f9f9f;
+    color:white;
+    cursor: pointer;
+}
+
+form .button:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 90%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.Info{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.download_link {
+    display: block;
+    width: 96%;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
